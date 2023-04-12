@@ -294,10 +294,18 @@ body {
         width: 35%;
     }
 
+    #photo img {
+    
+      height: 350px; 
+  }
 
     #carte {
 
-      background-color: transparent;
+      background-color: #F2F2F2;
+      border-radius: 6% 6% 0 0;
+      position: relative;
+      margin-top: -16%;
+      z-index: 1;
     }
    
 
@@ -318,16 +326,22 @@ body {
     #titre i {
         margin-left: 5px;
         padding-right: 3%;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 100;
 
     }
 
+    .card__icon {
+      font-size: 24px;
+      margin-right: 45px;
+    }
+    
     .btn-heart {
       position: relative;
       display: flex;
       margin-left: 50px;
     }
+    
     
     .carte {
         opacity: 0; /* les menus sont initialement cachés */
