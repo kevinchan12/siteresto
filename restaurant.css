@@ -20,10 +20,7 @@ body {
         color: white;
      } 
 
-
-     @media screen and  (min-width : 769px ) {
-
-      #logo  {
+       #logo  {
         display: flex;
         height: 25px;
         padding-top: 3%;
@@ -31,6 +28,70 @@ body {
         align-items: center;
         background-color: white;
     }
+
+    #logo i {
+      width: 6%;
+      display: inline-block;
+    
+
+  }
+
+  #photo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;   
+    position: relative;
+    z-index: 1;
+}
+
+#titre {
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  
+
+}
+
+
+
+
+.btn-heart--outline {
+  position: absolute;
+}
+.btn-heart--solid {
+  position: absolute;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  transform: scale(0);
+  transition: transform 300ms;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.btn-heart:hover {
+  cursor: pointer;
+}
+.btn-heart:hover .btn-heart--solid {
+  transform: scale(1);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.btn-heart:hover .btn-heart--outline {
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0);
+}
+
+.card__icon {
+  font-size: 24px;
+  margin-right: 45px;
+}
+
+     @media screen and  (min-width : 769px ) {
+
+   
     
     #logo img {
       margin: auto;
@@ -40,66 +101,20 @@ body {
     }
 
 
-    #logo i {
-        width: 6%;
-        display: inline-block;
-    
-    }
-
     #photo img {
-        width: 100%;
-        height: 450px;
-        object-fit: cover;
-        display: block;   
-        position: relative;
-        z-index: 1;
+    
+        height: 450px; 
     }
 
-    #titre {
-      margin-left: 2%;
-      display: flex;
-      align-items: center;
-      
 
-  }
-
- 
-  .btn-heart {
+    #titre h1 {width: 100%;
+      font-size:22px ;
+       
+   }
+   .btn-heart {
     position: relative;
     display: flex;
-    margin-left: 980px;
-  }
-  .btn-heart--outline {
-    position: absolute;
-  }
-  .btn-heart--solid {
-    position: absolute;
-    background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
-    background-clip: text;
-    color: rgba(0, 0, 0, 0);
-    transform: scale(0);
-    transition: transform 300ms;
-    background-clip: text;
-    -webkit-background-clip: text;
-  }
-  .btn-heart:hover {
-    cursor: pointer;
-  }
-  .btn-heart:hover .btn-heart--solid {
-    transform: scale(1);
-    background-clip: text;
-    -webkit-background-clip: text;
-  }
-  .btn-heart:hover .btn-heart--outline {
-    background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: rgba(0, 0, 0, 0);
-  }
-  
-  .card__icon {
-    font-size: 24px;
-    margin-right: 25px;
+    margin-left: 65%;
   }
   
   #entree, #plats, #desserts {
@@ -226,9 +241,6 @@ body {
       
 
 
-
-
-
     footer {
       background-color: rgb(43, 40, 40);
       color: white;
@@ -276,36 +288,12 @@ body {
     @media screen and (max-width : 768px) {
     
     
-    #logo  {
-        display: flex;
-        height: 25px;
-        padding-top: 3%;
-        padding-bottom: 3%;
-        align-items: center;
-        background-color: white;
-    }
-    
+  
     #logo img {
         margin: 0 auto;
         width: 35%;
     }
 
-
-    #logo i {
-        width: 6%;
-        display: inline-block;
-      
-
-    }
-
-    #photo img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        display: block;   
-        position: relative;
-        z-index: 1;
-    }
 
     #carte {
 
@@ -322,6 +310,11 @@ body {
         
     }
 
+    #titre h1 {
+     font-size:20px ;
+      
+  }
+
     #titre i {
         margin-left: 5px;
         padding-right: 3%;
@@ -330,6 +323,11 @@ body {
 
     }
 
+    .btn-heart {
+      position: relative;
+      display: flex;
+      margin-left: 50px;
+    }
     
     .carte {
         opacity: 0; /* les menus sont initialement cachés */
