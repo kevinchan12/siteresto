@@ -89,6 +89,7 @@ body {
   margin-right: 45px;
 }
 
+
      @media screen and  (min-width : 769px ) {
 
    
@@ -126,7 +127,7 @@ body {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 30px;
-  }
+  }  
   
   .carte {
     display: flex;
@@ -344,6 +345,9 @@ body {
     
     
     .carte {
+        background-color: #fff;
+       
+        border-radius: 22px ;
         opacity: 0; /* les menus sont initialement cachés */
         animation: apparition-menu 0.3s ease-in-out forwards; /* l'animation sera appliquée à chaque élément menu */
       }
@@ -378,7 +382,19 @@ body {
       }
       
 
-   
+      .titrerepas {
+        padding: 0%;
+        padding-bottom: 2%;
+       
+      }
+      
+      .titrerepas:hover {
+        width: 10%;
+        border-bottom: solid 7px #99E2D0;
+        border-top: none;
+        padding-bottom: 1%;
+      } 
+      
 
     #entree {
         cursor: pointer;
@@ -413,11 +429,11 @@ body {
 
     .carte .annimcarte {
     width:15%;
-    height: 85px;
+    height: 78px;
     background-color: #99E2D0;
     display: inline-flex;
-    position: absolute;
-    margin-left: 389px;
+    position:absolute ;
+    margin-left: 85%;
     justify-content: center;
     align-items: center;
     border-radius: 0px 20px 20px 0px;

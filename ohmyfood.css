@@ -182,9 +182,9 @@ color: white;
 }
 
 .btn-heart {
-  position: relative;
+
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 .btn-heart--outline {
@@ -245,7 +245,7 @@ color: white;
 
 
 #fonctionnement {
-  width: auto;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
  padding-bottom: 2%;
@@ -263,23 +263,24 @@ color: white;
 }
 
 #listepuce {
+  width: 100%;
   display: flex;
-  gap: 5%;
+  gap: 1%;
   justify-content: center;
 
 }
 
 #listepuce .num {
-  width: 150px;
-  height: 35px;
+  width: 80px;
+  height: 40px;
   position: relative;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: 2%;
   border-radius: 50%;
   background-color:#9356DC;
   text-align: center;
-  line-height: 35px;
-  color: #F2F2F2;
+  line-height: 42px;
+  color: #F2F2F2; 
 }
 
 #listepuce .inter .case {
@@ -302,7 +303,6 @@ background-color: #e8dff3;
 
 .inter {
   width: 50%;
-
   display: flex;
   justify-items: center;
 
@@ -311,7 +311,7 @@ background-color: #e8dff3;
 .inter i {
  
   margin-right: -5.5%;
-  margin-top: 18px;
+  margin-top: 24px;
   color: rgb(187, 184, 184);
   display: flex;
   justify-items: center;
@@ -390,16 +390,6 @@ background-color: #e8dff3;
   color: #222222;
 }
 
-
-
-.btn-heart {
-  position: relative;
-  display: flex;
-  margin-left: 980px;
-}
-
-
-
 p {
   margin: 0;
   font-size: 16px;
@@ -412,7 +402,7 @@ p {
   height: 5px;
   position: absolute;
   margin-top: 20px;
-  margin-left: 71%;
+  margin-left: 65%;
   margin-bottom: 135px;
   padding: 1%;
   background-color: #99E2D0;
@@ -493,6 +483,7 @@ footer .iconefooter {
 
 
 #fonctionnement {
+    
     width:100% ;
     height: 320px;
     background-color: white;
@@ -679,6 +670,22 @@ footer .iconefooter {
     font-size: 12px;
 }
 
+
+
+}
+
+@media screen and (min-width : 768px) and (max-width : 880px) {
+
+  #listepuce .num {
+    width: 60px;
+    height: 35px;
+    margin-left: -1%;
+    line-height: 35px;
+  }
+
+  #listepuce .inter .case{
+  width:200px
+}
 
 
 }
