@@ -397,32 +397,39 @@ body {
     .carte h3 {
         margin-top: 2%;
         margin-bottom: 0%;
+        width: 90%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: middle;
 
     }
+    
 
     .carte p {
-        display: inline-flex;
-       
         margin-left: 2%;
+        
     }
+    
 
     .carte .ingredients {
+      display: inline-block;
       width: 68%;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-    }
+      vertical-align: middle;
+    }  
     
-    
-  
     .carte .price {
-        width: 6%;
-        margin-left: 20%;
-        position: absolute;
-        z-index: 1;
-
+      display: inline-block;
+      width: 6%;
+      margin-left: 11%;   
+      z-index: 1;
+      vertical-align: middle;
     }
-    
+
+
 
     .carte .annimcarte {
     width:15%;
@@ -438,11 +445,15 @@ body {
     
     }
 
+    .carte:hover h3 {
+      margin-left: 2px;
+     
+    }
     .carte .annimcarte i {
         color: white;
     }
     .carte:hover .price {
-        margin-left: 25px;
+        margin-left: 12px;
       }
     .carte:hover .annimcarte {
         display: flex;

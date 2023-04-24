@@ -689,3 +689,26 @@ footer .iconefooter {
 
 
 }
+
+@media screen and  (max-width : 416px) {
+
+  #listepuce .num {
+    margin-left: 12%;
+    margin-top: 2%;
+    
+  }
+
+  #listepuce .inter i{
+
+  margin-left: 21%;
+  margin-top: 2.5%;
+}
+
+#listepuce .inter p {
+  font-size: 12px;
+
+}
+
+
+}
+
